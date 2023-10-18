@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Young+Serif&display=swap');
+body {
+  /* background-color: rgb(75, 107, 107); */
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+}
+.header-bar {
+  align-items: end;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5em;
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+.contact-header-bar, .about-header-bar {
+  align-items: end;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+.header-bar-element {
+  color: white;
+  margin:  8px;
+  margin-right: 40px;
+  padding: 16px;
+  text-decoration: none;
+}
+.header-bar div {
+  font-size: 1.5em;
+}
+.header-bar a:hover{
+  background-color: white;
+  color: black;
+  transition: all .3s;
+}
+.about-header-bar a:hover{
+  background-color: white;
+  color: black;
+  transition: all .3s;
+}
+.contact-header-bar a:hover{
+  background-color: white;
+  color: black;
+  transition: all .3s;
+}
+.content-container {
+  align-items: center;
+  border-left: 4px solid rgba(255, 255, 255, .5);
+  border-right: 4px solid rgba(255, 255, 255, .5);
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-top: 1%; */
+  padding: 30px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 13%;
+  width:60%;
+  height: 850px;
+}
+.large-font {
+  font-size: 1.5em;
+}
+@media (max-width: 855px) {
+  .header-bar{
+    align-items: center;
+    flex-direction: column;
+    height: 288px;
+  }
+  .content-container {
+    top: 296px;
+  }
+}
+@media (max-width: 490px) {
+  .header-bar{
+    font-size: 1.4em;
+  }
+}
+.img, figure img {
+  /* max-height: 700px; */
+  width: 98%;
+}
+.kenti {
+  float: left;
+  margin-right: 15px;
+  width: 35%;
+}
+.content-container__form {
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 450px;
+}
+button {
+  background-color: dark grey;
+  color: black;
+  font-size: 1.2em;
+  padding: 10px;
+  width: 453px;
+}
+button:hover {
+  background-color: aquamarine;
+}
+#content-container__form__name, #content-container__form__email {
+  height: 36px;
+  width: 390px;
+}
+.content-container__form__item {
+  padding: 10px 0 20px;
+}
+#content-container__form__msg {
+  max-width: 450px;
+  min-width: 449px
+}
+.footer {
+  position: absolute;
+  bottom: 100px;
+}
